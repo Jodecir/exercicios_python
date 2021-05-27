@@ -10,7 +10,7 @@ Repositório de estudo e resoluções de problema em python
 
 ### Linguagens Utilizadas:
 
-[![Python Badge](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff&link=https://www.w3schools.com/html/)](https://www.w3schools.com/html/) 
+[![Python Badge](https://img.shields.io/badge/python-%2314354C.svg?style=flat-square&logo=python&logoColor=306998&link=https://docs.python.org/3/)](https://docs.python.org/3/)
 
 ### Recursos:
 
