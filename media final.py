@@ -13,4 +13,9 @@ while n4 > 10:
 
 media = (n1 + n2 + n3 + n4) / 4
 
-print('A Média do Aluno é: {}'.format(media))
+if (media >= 6):
+  print('Sua média é: {}'.format(media))
+  print("Você foi Aprovado")
+else:
+  print('Sua média é: {}'.format(media))
+  print("Você foi Reprovado")
