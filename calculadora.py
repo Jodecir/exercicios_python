@@ -1,17 +1,19 @@
 print('Calculos:')
-a = int(input('Insira o Primeiro Valor: '))
-b = int(input('Insira o Segundo Valor: '))
-soma              = a + b
-subtracao         = a - b
-multiplicacao     = a * b
-divisao           = a / b
-media             = int((a + b) / 2)
-resultado = ('Soma: {soma} \nSubtração: {subtracao} '
-      '\nMultiplicação: {multiplicacao}'
-      '\nDivisão: {divisao}'.format(soma=soma,
-                                subtracao=subtracao,
-                                multiplicacao=multiplicacao,
-                                divisao=divisao))
+a = int(input('Insira o primeiro valor: '))
+b = int(input('Insira o segundo valor: '))
+operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
+media = int((a + b) / 2)
 
-print(resultado)
-print('Média: ' + str(media))
+if operador == "+":
+    operacao = a + b
+elif operador == "-":
+    operacao = a - b
+elif operador == "*":
+    operacao = a * b
+elif operador == "/":
+    operacao = a / b
+else:
+    operacao = "Média igual a " + str(media)
+
+print("Resultado:")
+print(operacao)
