@@ -1,19 +1,25 @@
-print('Calculos:')
-a = int(input('Insira o primeiro valor: '))
-b = int(input('Insira o segundo valor: '))
-operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
-media = int((a + b) / 2)
+fechado = False
 
-if operador == "+":
-    operacao = a + b
-elif operador == "-":
-    operacao = a - b
-elif operador == "*":
-    operacao = a * b
-elif operador == "/":
-    operacao = a / b
-else:
-    operacao = "Média igual a " + str(media)
+while fechado == False:
+    a = int(input('Insira o primeiro valor: '))
+    b = int(input('Insira o segundo valor: '))
+    operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
+    media = int((a + b) / 2)
 
-print("Resultado:")
-print(operacao)
+    if operador == "+":
+        operacao = a + b
+    elif operador == "-":
+        operacao = a - b
+    elif operador == "*":
+        operacao = a * b
+    elif operador == "/":
+        operacao = a / b
+    else:
+        operacao = "Média igual a " + str(media)
+
+    print("Resultado:")
+    print(operacao)
+
+    repetir = input("Deseja continuar (s/n): ")
+    if repetir == "n":
+        fechado = True
