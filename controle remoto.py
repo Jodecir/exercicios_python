@@ -14,7 +14,7 @@ class Television:
             self.channel += 1
 
     def previous_channel(self):
-        if self.state:
+        if self.state and self.channel >= 1:
             self.channel -= 1
 
 if __name__ == '__main__':
@@ -38,3 +38,5 @@ if __name__ == '__main__':
     print('Canal: {}'.format(tv.channel))
     tv.power()
     print('A TV está ligada: {}'.format(tv.state))
+    tv.previous_channel()
+    print('Canal: {}'.format(tv.channel))
