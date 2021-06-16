@@ -5,11 +5,11 @@ while fechado == False:
     b = int(input('Insira o segundo valor: '))
 
     if a == b:
-        resultado = print("Os dois números são iguais.")
+        resultado = print("O número", a, "é igual a", b)
     elif a < b:
-        resultado = print("O primeiro valor é menor que o segundo.")
+        resultado = print("O número", a, "é menor que", b)
     elif a > b:
-        resultado = print("O primeiro valor é maior que o segundo.")
+        resultado = print("O número", a, "é maior que", b)
     else:
         resultado = print("Os dois números são diferentes.")
 
