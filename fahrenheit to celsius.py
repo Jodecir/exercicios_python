@@ -1,5 +1,11 @@
-f = int(input("Qual é a temperatura em F ? "));
+a = int(input('Insira o valor: '))
+escala = input('Insira a escala que ele está entre (F/C): ')
+c = (a - 32) / 1.8
+f = a * 1.8 + 32
 
-c = (f - 32) / 1.8;
-
-print("A temperatura em C é", c,"°");
+if escala == "C" or escala == "c":
+    print("A temperatura em F é", f,"°")
+elif escala == "F" or escala == "f":
+    print("A temperatura em C é", c,"°")
+else:
+    print("Repita o processo por favor , algo está incorreto.")
