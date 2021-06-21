@@ -1,14 +1,14 @@
 fechado = False
 
 while fechado == False:
-    a = int(input('Insira o valor: '))
+    n1 = int(input('Insira o valor: '))
 
-    if a < 0:
-        resultado = print("O número", a, "é negativo.")
-    elif a > 0:
-        resultado = print("O número", a, "é positivo.")
+    if n1 < 0:
+        resultado = print("O número", n1, "é negativo.")
+    elif n1 > 0:
+        resultado = print("O número", n1, "é positivo.")
     else:
-        resultado = print("O número", a, "é neutro.")
+        resultado = print("O número", n1, "é neutro.")
 
     repetir = input("Deseja continuar (s/n): ")
     if repetir == "n":

@@ -1,19 +1,19 @@
 fechado = False
 
 while fechado == False:
-    a = int(input('Insira o primeiro valor: '))
-    b = int(input('Insira o segundo valor: '))
+    n1 = int(input('Insira o primeiro valor: '))
+    n2 = int(input('Insira o segundo valor: '))
     operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
-    media = int((a + b) / 2)
+    media = int((n1 + n2) / 2)
 
     if operador == "+":
-        operacao = a + b
+        operacao = n1 + n2
     elif operador == "-":
-        operacao = a - b
+        operacao = n1 - n2
     elif operador == "*":
-        operacao = a * b
+        operacao = n1 * n2
     elif operador == "/":
-        operacao = a / b
+        operacao = n1 / n2
     else:
         operacao = "Média igual a " + str(media)
 

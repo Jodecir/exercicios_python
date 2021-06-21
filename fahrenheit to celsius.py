@@ -1,10 +1,10 @@
 fechado = False
 
 while fechado == False:
-    a = int(input('Insira o valor: '))
+    n1 = int(input('Insira o valor: '))
     escala = input('Insira a escala que ele está entre (F/C): ')
-    c = (a - 32) / 1.8
-    f = a * 1.8 + 32
+    c = (n1 - 32) / 1.8
+    f = n1 * 1.8 + 32
         
     if __name__ == '__main__':
         if escala == "C" or escala == "c":
