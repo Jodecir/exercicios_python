@@ -1,3 +1,4 @@
+nome = input('Insira o nome do Aluno: ')
 n1 = float(input('Nota do 1º Bimestre: '))
 while n1 > 10:
   n1 = float(input('Nota Acima do Permitido, 1º Bimestre: '))
@@ -15,8 +16,26 @@ media = (n1 + n2 + n3 + n4) / 4
 
 if __name__ == '__main__':
   if (media >= 6):
-    print('Sua média é: {}'.format(media))
-    print("Você foi Aprovado")
+    print("---------------------")
+    print("# Matricula:","01234",)
+    print("Nome do Aluno:",nome,)
+    print("---------------------")
+    print("Nota 1º B:", n1)
+    print("Nota 2º B:", n2)
+    print("Nota 3º B:", n3)
+    print("Nota 4º B:", n4)
+    print("---------------------")
+    print('Média Final: {}'.format(media))
+    print(nome,"foi aprovado.",)
   else:
+    print("---------------------")
+    print("# Matricula:","01234",)
+    print("Nome do Aluno:",nome,)
+    print("---------------------")
+    print("Nota 1º B:", n1)
+    print("Nota 2º B:", n2)
+    print("Nota 3º B:", n3)
+    print("Nota 4º B:", n4)
+    print("---------------------")
     print('Sua média é: {}'.format(media))
-    print("Você foi Reprovado")
+    print(nome,"foi reprovado.",)
