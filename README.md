@@ -1,6 +1,6 @@
 # Descrição do Projeto
 
-Repositório de estudo e resoluções de problema em python
+Repositório de estudo e resoluções de problemas em python
 
 ### Ferramentas Utilizadas:
 
