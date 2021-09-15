@@ -16,6 +16,7 @@ Repositório de estudo e resoluções de problemas em python
 
 * [Input](https://docs.python.org/3/library/functions.html#input)
 * [If](https://docs.python.org/3/tutorial/controlflow.html#if)
+* [Def](https://docs.python.org/3/reference/compound_stmts.html#def)
 * [While](https://docs.python.org/3/reference/compound_stmts.html#while)
 
 #### Contatos:
