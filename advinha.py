@@ -5,13 +5,16 @@ cnt = 0
 chute = -1
 
 while chute != num:
-    chute = int(input('Chute um número de 1 a 100: '))
-    cnt += 1
+    try:
+        chute = int(input('Chute um número de 1 a 100: '))
+        cnt += 1
 
-    if chute < num:
-        print ("Errou, o número sorteado é Maior")
-    elif chute > num:
-        print ("Errou, o número sorteado é Menor")
-    else:
-        print(">>> Acertou! Parabéns, você é um gênio!")
-        print(">>> Precisou de", cnt, "tentativas.")
+        if chute < num:
+            print ("Errou, o número sorteado é Maior")
+        elif chute > num:
+            print ("Errou, o número sorteado é Menor")
+        else:
+            print(">>> Acertou! Parabéns, você é um gênio!")
+            print(">>> Precisou de", cnt, "tentativas.")
+    except ValueError:
+        print('Valor inválido. Deve-se digitar apenas números.')
