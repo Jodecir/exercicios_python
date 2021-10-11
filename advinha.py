@@ -17,4 +17,4 @@ while chute != num:
             print(">>> Acertou! Parabéns, você é um gênio!")
             print(">>> Precisou de", cnt, "tentativas.")
     except ValueError:
-        print('Valor inválido. Deve-se digitar apenas números.')
+        print('Valor inválido, digite apenas números.')
