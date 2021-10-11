@@ -18,10 +18,12 @@ while fechado == False:
         print("Não é possível realizar divisão por 0.")
     except ArithmeticError:
         print("Houve um erro ao realizar uma operação aritmética.")
+    except FloatingPointError:
+        print("Valores flutuantes são inválido. Deve-se digitar apenas números inteiros.")
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
-        print("\nResultado:", operacao,"\n")
+        print("\n>>> Resultado:", operacao,"\n")
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
