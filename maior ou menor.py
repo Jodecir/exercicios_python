@@ -1,18 +1,23 @@
 fechado = False
 
 while fechado == False:
-    n1 = int(input('Insira o primeiro valor: '))
-    n2 = int(input('Insira o segundo valor: '))
+    try:
+        n1 = int(input('Insira o primeiro valor: '))
+        n2 = int(input('Insira o segundo valor: '))
 
-    if n1 == n2:
-        resultado = print("O número", n1, "é igual a", n2)
-    elif n1 < n2:
-        resultado = print("O número", n1, "é menor que", n2)
-    elif n1 > n2:
-        resultado = print("O número", n1, "é maior que", n2)
+        if n1 == n2:
+            resultado = print("O número", n1, "é igual a", n2)
+        elif n1 < n2:
+            resultado = print("O número", n1, "é menor que", n2)
+        elif n1 > n2:
+            resultado = print("O número", n1, "é maior que", n2)
+    except FloatingPointError:
+        print("Valores flutuantes são inválido. Deve-se digitar apenas números inteiros.")
+    except ValueError:
+        print("Valor inválido. Deve-se digitar apenas números.")
     else:
         resultado = print("Os dois números são diferentes.")
-
-    repetir = input("Deseja continuar (s/n): ")
-    if repetir == "n":
-        fechado = True
+    finally:
+        repetir = input("Deseja continuar (s/n): ")
+        if repetir == "n":
+            fechado = True
