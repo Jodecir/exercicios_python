@@ -18,6 +18,7 @@ Repositório de estudo e resoluções de problemas em python
 * [If](https://docs.python.org/3/tutorial/controlflow.html#if)
 * [Def](https://docs.python.org/3/reference/compound_stmts.html#def)
 * [While](https://docs.python.org/3/reference/compound_stmts.html#while)
+* [Try](https://docs.python.org/3/reference/compound_stmts.html#try)
 
 #### Contatos:
 
