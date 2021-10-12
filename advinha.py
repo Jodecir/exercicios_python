@@ -1,17 +1,21 @@
 import random
 
-num = random.randint(1, 100)  # sorteia número entre 1 e 100
+numMax = 100
+numMin = 1
+numRandom = random.randint(numMin, numMax)  # sorteia número entre 1 e 100
 cnt = 0
-chute = -1
+guess = 0
 
-while chute != num:
+while guess != numRandom:
     try:
-        chute = int(input('Chute um número de 1 a 100: '))
+        guess = int(input('Chute um número de 1 a 100: '))
+        while guess > numMax or guess < numMin:
+            guess = int(input('Seu número está incorreto, chute um número de 1 a 100: '))
         cnt += 1
 
-        if chute < num:
+        if guess < numRandom:
             print ("Errou, o número sorteado é Maior")
-        elif chute > num:
+        elif guess > numRandom:
             print ("Errou, o número sorteado é Menor")
         else:
             print(">>> Acertou! Parabéns, você é um gênio!")
