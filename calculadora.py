@@ -5,15 +5,22 @@ while fechado == False:
         n1 = abs(int(input('Insira o primeiro valor: ')))
         n2 = abs(int(input('Insira o segundo valor: ')))
         operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
-        media = int((n1 + n2) / 2)
-        if operador == "+":
+        if operador == "+" or operador == "soma":
             operacao = n1 + n2
-        elif operador == "-":
+            print("\n>>> Resultado:", operacao,"\n")
+        elif operador == "-" or operador == "subtração":
             operacao = n1 - n2
-        elif operador == "*":
+            print("\n>>> Resultado:", operacao,"\n")
+        elif operador == "*" or operador == "multiplicação":
             operacao = n1 * n2
-        elif operador == "/":
+            print("\n>>> Resultado:", operacao,"\n")
+        elif operador == "/" or operador == "divisão":
             operacao = n1 / n2
+            print("\n>>> Resultado:", operacao,"\n")
+        else:
+            media = int((n1 + n2) / 2)
+            operacao = media
+            print("\n>>> Resultado:", operacao,"\n")
     except ZeroDivisionError:
         print("Não é possível realizar divisão por 0.")
     except ArithmeticError:
@@ -23,8 +30,6 @@ while fechado == False:
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
-        print("\n>>> Resultado:", operacao,"\n")
-    finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
             fechado = True
