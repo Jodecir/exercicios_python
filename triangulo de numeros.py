@@ -10,7 +10,6 @@ def criarTrianguloRetangulo(valor):
             print(texto)
             fileiraQt +=1
 
-
 fechado = False
 
 while fechado == False:
