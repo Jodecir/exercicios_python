@@ -2,33 +2,67 @@ fechado = False
 
 while fechado == False:
     cliente = str(input("Nome: "))
-    idade = int(input("Idade: "))
-    valorCurso = 0
-    greeting = "Olá"
-
-    curso = int(input(" \n 1-TI \n 2-Psicologia \n 3-Pacote Office \n 4-Manicure\n 5-Fotografia\n Digite o número:"))
-
-    if curso == 1:
-        valorCurso = 400
-        desconto = valorCurso * idade / 100
-        print(greeting,cliente,",","o curso desejado com desconto ficou: R$",valorCurso-desconto)
-    elif curso == 2:
-        valorCurso = 1200
-        desconto = valorCurso * idade / 100
-        print(greeting,cliente,",","o curso desejado com desconto ficou: R$",valorCurso-desconto)
-    elif curso == 3:
-        valorCurso = 100
-        desconto = valorCurso * idade / 100
-        print(greeting,cliente,",","o curso desejado com desconto ficou: R$",valorCurso-desconto)
-    elif curso == 4:
-        valorCurso = 149
-        desconto = valorCurso * idade / 100
-        print(greeting,cliente,",","o curso desejado com desconto ficou: R$",valorCurso-desconto)
-    elif curso == 5:
-        valorCurso = 300
-        desconto = valorCurso * idade / 100
-        print(greeting,cliente,",","o curso desejado com desconto ficou: R$",valorCurso-desconto)
+    try:
+        idade = int(input("Idade: "))
+    except FloatingPointError:
+        print("Valores flutuantes são inválidos. Deve-se digitar apenas números inteiros.")
+    except ValueError:
+        print("Valor inválido. Deve-se digitar apenas números.")
     else:
+        valorCurso = 0
+        greeting = "Olá"
+
+        print("\n>>> 1 - TI")
+        print(">>> 2 - Psicologia")
+        print(">>> 3 - Pacote Office")
+        print(">>> 4 - Manicure")
+        print(">>> 5 - Fotografia\n")
+        
+        try:
+            curso = int(input("Digite o número:"))
+        except FloatingPointError:
+            print("Valores flutuantes são inválidos. Deve-se digitar apenas números inteiros.")
+        except ValueError:
+            print("Valor inválido. Deve-se digitar apenas números.")
+        else:
+            cursoMin = 1
+            cursoMax = 5
+            
+            while curso > cursoMax or curso < cursoMin:
+                curso = int(input('O número do curso está incorreto, Escolha entre 1 a 5:'))
+            if curso == 1:
+                valorCurso = 400
+                print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
+                print("---------------------")
+                desconto = valorCurso * idade / 100
+                print("Com desconto se torna: R$",valorCurso - desconto)
+            elif curso == 2:
+                valorCurso = 1200
+                print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
+                print("---------------------")
+                desconto = valorCurso * idade / 100
+                print("Com desconto se torna: R$",valorCurso - desconto)
+            elif curso == 3:
+                valorCurso = 100
+                print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
+                print("---------------------")
+                desconto = valorCurso * idade / 100
+                print("Com desconto se torna: R$",valorCurso - desconto)
+            elif curso == 4:
+                valorCurso = 149
+                print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
+                print("---------------------")
+                desconto = valorCurso * idade / 100
+                print("Com desconto se torna: R$",valorCurso - desconto)
+            elif curso == 5:
+                valorCurso = 300
+                print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
+                print("---------------------")
+                desconto = valorCurso * idade / 100
+                print("Com desconto se torna: R$",valorCurso - desconto)
+            else:
+                break
+    finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
             fechado = True
