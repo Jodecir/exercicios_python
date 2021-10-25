@@ -6,7 +6,7 @@ while fechado == False:
         lado2 = int(input("Digite a medida do lado 2: "))
         lado3 = int(input("Digite a medida do lado 3: "))
     except FloatingPointError:
-        print("Valores flutuantes são inválido. Deve-se digitar apenas números inteiros.")
+        print("Valores flutuantes são inválidos. Deve-se digitar apenas números inteiros.")
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
