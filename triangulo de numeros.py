@@ -21,6 +21,7 @@ while fechado == False:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
         criarTrianguloRetangulo(valorFinal)
+    finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
             fechado = True
