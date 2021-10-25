@@ -41,8 +41,8 @@ while fechado == False:
                 print("---------------------")
                 print(">>>", nome, "foi reprovado.",)
                 print("---------------------")
-
-            repetir = input("Deseja continuar (s/n): ")
-            print("---------------------")
-            if repetir == "n":
-                fechado = True
+    finally:
+        repetir = input("Deseja continuar (s/n): ")
+        print("...")
+        if repetir == "n":
+            fechado = True
