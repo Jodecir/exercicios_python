@@ -1,3 +1,21 @@
+def soma(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    return a / b
+
+def media(a, b):
+    return (a + b) / 2
+
+def raiz (a):
+    return a ** (1/2)
+
 fechado = False
 
 while fechado == False:
@@ -12,20 +30,22 @@ while fechado == False:
         try:
             operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
             if operador == "+" or operador == "soma":
-                operacao = n1 + n2
+                operacao = soma(n1, n2)
                 print("\n>>> Resultado:", operacao,"\n")
             elif operador == "-" or operador == "subtração":
-                operacao = n1 - n2
+                operacao = subtracao(n1, n2)
                 print("\n>>> Resultado:", operacao,"\n")
             elif operador == "*" or operador == "multiplicação":
-                operacao = n1 * n2 
+                operacao = multiplicacao(n1, n2)
                 print("\n>>> Resultado:", operacao,"\n")
             elif operador == "/" or operador == "divisão":
-                operacao = n1 / n2
+                operacao = divisao(n1, n2)
                 print("\n>>> Resultado:", operacao,"\n")
+            elif operador == "**" or operador == "raiz":
+                operacao = raiz(n1)
+                print("\n>>> Resultado: {:.2f} \n".format(operacao))
             else:
-                media = int((n1 + n2) / 2)
-                operacao = media
+                operacao = int(media(n1, n2))
                 print("\n>>> Resultado da média:", operacao,"\n")
         except ZeroDivisionError:
             print("Não é possível realizar divisão por 0.")
