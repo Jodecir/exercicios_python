@@ -37,27 +37,27 @@ while fechado == False:
                 valorCurso = 400
                 print("---------------------")
                 valorFinal = valorCurso - desconto(valorCurso, idade)
-                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade que é {}%'.format(greeting, cliente, valorCurso, valorFinal, idade))
+                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 2:
                 valorCurso = 1200
                 print("---------------------")
                 valorFinal = valorCurso - desconto(valorCurso, idade)
-                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade que é {}%'.format(greeting, cliente, valorCurso, valorFinal, idade))
+                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 3:
                 valorCurso = 100
                 print("---------------------")
                 valorFinal = valorCurso - desconto(valorCurso, idade)
-                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade que é {}%'.format(greeting, cliente, valorCurso, valorFinal, idade))
+                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 4:
                 valorCurso = 149
                 print("---------------------")
                 valorFinal = valorCurso - desconto(valorCurso, idade)
-                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade que é {}%'.format(greeting, cliente, valorCurso, valorFinal, idade))
+                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 5:
                 valorCurso = 300
                 print("---------------------")
                 valorFinal = valorCurso - desconto(valorCurso, idade)
-                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade que é {}%'.format(greeting, cliente, valorCurso, valorFinal, idade))
+                print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             else:
                 break
     finally:
