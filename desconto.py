@@ -1,3 +1,6 @@
+def desconto(a, b):
+    return a * b / 100
+
 fechado = False
 
 while fechado == False:
@@ -34,32 +37,33 @@ while fechado == False:
                 valorCurso = 400
                 print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
                 print("---------------------")
-                desconto = valorCurso * idade / 100
-                print("Com desconto se torna: R$",valorCurso - desconto)
+                # A porcentagem do desconto é a idade do cliente 
+                valorFinal = valorCurso - desconto(valorCurso, idade)
+                print("Com desconto se torna: R$",valorFinal)
             elif curso == 2:
                 valorCurso = 1200
                 print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
                 print("---------------------")
-                desconto = valorCurso * idade / 100
-                print("Com desconto se torna: R$",valorCurso - desconto)
+                valorFinal = valorCurso - desconto(valorCurso, idade)
+                print("Com desconto se torna: R$",valorFinal)
             elif curso == 3:
                 valorCurso = 100
                 print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
                 print("---------------------")
-                desconto = valorCurso * idade / 100
-                print("Com desconto se torna: R$",valorCurso - desconto)
+                valorFinal = valorCurso - desconto(valorCurso, idade)
+                print("Com desconto se torna: R$",valorFinal)
             elif curso == 4:
                 valorCurso = 149
                 print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
                 print("---------------------")
-                desconto = valorCurso * idade / 100
-                print("Com desconto se torna: R$",valorCurso - desconto)
+                valorFinal = valorCurso - desconto(valorCurso, idade)
+                print("Com desconto se torna: R$",valorFinal)
             elif curso == 5:
                 valorCurso = 300
                 print(greeting,cliente,",","o curso desejado sem desconto é: R$",valorCurso)
                 print("---------------------")
-                desconto = valorCurso * idade / 100
-                print("Com desconto se torna: R$",valorCurso - desconto)
+                valorFinal = valorCurso - desconto(valorCurso, idade)
+                print("Com desconto se torna: R$",valorFinal)
             else:
                 break
     finally:
