@@ -2,7 +2,7 @@ fechado = False
 
 while fechado == False:
   try:
-    idade = int(input('Qual sua idade ? '))
+    idade = int(input('Insira sua idade: '))
     maiorIdade = 18
 
     if idade >= maiorIdade:
