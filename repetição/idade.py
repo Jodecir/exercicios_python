@@ -3,10 +3,11 @@ fechado = False
 while fechado == False:
   try:
     idade = int(input('Qual sua idade ? '))
+    maiorIdade = 18
 
-    if idade >= 18:
+    if idade >= maiorIdade:
       print("Você é maior de idade")
-    elif idade > 0 & idade < 18:
+    elif idade > 0 & idade < maiorIdade:
       print("Você é menor de idade")
     else:
       print("Valor inválido")
