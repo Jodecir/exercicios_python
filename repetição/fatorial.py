@@ -9,13 +9,13 @@ while fechado == False:
         except ValueError:
             print("Valor inválido. Deve-se digitar apenas números.")
         else:
-            multiplicação = 1
+            multiplicacao = 1
             
             if int(fatorial) >= 1:
                 for i in range (1,int(fatorial) + 1):
-                    multiplicação *= i
+                    multiplicacao *= i
 
-            resultado = multiplicação
+            resultado = multiplicacao
             print("{}! = {}".format(fatorial, resultado));
         finally:
             repetir = input("Deseja continuar (s/n): ")
