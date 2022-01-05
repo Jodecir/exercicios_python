@@ -31,22 +31,22 @@ while fechado == False:
             operador = input('Insira o operador entre (+-/*) qualquer outro valor resultará em média: ')
             if operador == "+" or operador == "soma":
                 operacao = soma(n1, n2)
-                print("\n>>> Resultado:", operacao,"\n")
+                print(f"\n>>> Resultado: {operacao}\n")
             elif operador == "-" or operador == "subtração":
                 operacao = subtracao(n1, n2)
-                print("\n>>> Resultado:", operacao,"\n")
+                print(f"\n>>> Resultado: {operacao}\n")
             elif operador == "*" or operador == "multiplicação":
                 operacao = multiplicacao(n1, n2)
-                print("\n>>> Resultado:", operacao,"\n")
+                print(f"\n>>> Resultado: {operacao}\n")
             elif operador == "/" or operador == "divisão":
                 operacao = divisao(n1, n2)
-                print("\n>>> Resultado:", operacao,"\n")
+                print(f"\n>>> Resultado: {operacao}\n")
             elif operador == "**" or operador == "raiz":
                 operacao = raiz(n1)
                 print("\n>>> Resultado: {:.2f} \n".format(operacao))
             else:
                 operacao = int(media(n1, n2))
-                print("\n>>> Resultado da média:", operacao,"\n")
+                print(f"\n>>> Resultado: {operacao}\n")
         except ZeroDivisionError:
             print("Não é possível realizar divisão por 0.")
         except ArithmeticError:
