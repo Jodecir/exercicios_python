@@ -10,13 +10,13 @@ while fechado == False:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
         if n1 == n2:
-            resultado = print("O número", n1, "é igual a", n2)
+            resultado = print(f"O número {n1} é igual a {n2}")
         elif n1 < n2:
-            resultado = print("O número", n1, "é menor que", n2)
+            resultado = print(f"O número {n1} é menor que {n2}")
         elif n1 > n2:
-            resultado = print("O número", n1, "é maior que", n2)
+            resultado = print(f"O número {n1} é maior que {n2}")
         else:
-            resultado = print("O número", n1, "é diferente de", n2)
+            resultado = print(f"O número {n1} é diferente de {n2}")
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
