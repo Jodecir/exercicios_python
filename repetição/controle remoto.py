@@ -22,10 +22,10 @@ tv = Television()
 fechado = False
 
 while fechado == False:
-    botao = input("Deseja apertar o botão ON/OFF do controle (s/n): ")
+    button = input("Deseja apertar o botão ON/OFF do controle (s/n): ")
     
     if __name__ == '__main__':    
-        if botao == "s":
+        if button == "s":
             tv.power()
             
             print("---------------------")
@@ -33,12 +33,12 @@ while fechado == False:
             print('Canal: {}'.format(tv.channel))
             print("---------------------")
         else:
-            botao = input("Deseja avançar ou retroceder o canal (+/-): ")
+            button = input("Deseja avançar ou retroceder o canal (+/-): ")
 
-            if botao == "+":
+            if button == "+":
                 tv.next_channel()
                 print('Canal: {}'.format(tv.channel))
-            elif botao == "-":
+            elif button == "-":
                 tv.previous_channel()
                 print('Canal: {}'.format(tv.channel))
                 
