@@ -29,7 +29,7 @@ while fechado == False:
                 print("---------------------")
                 print(">>> Parabéns, você tem muita sorte e acertou!")
                 print("---------------------")
-                print("Tentativas necessárias:", cnt)
+                print(f"Tentativas necessárias: {cnt}")
                 print("---------------------")
         
                 repetir = input("Deseja continuar (s/n): ")
