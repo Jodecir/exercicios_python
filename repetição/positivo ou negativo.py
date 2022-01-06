@@ -11,11 +11,11 @@ while fechado == False:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
         if n1 < 0:
-            resultado = print("O número", n1, "é negativo.")
+            resultado = print(f"\n O número {n1} é negativo.\n")
         elif n1 > 0:
-            resultado = print("O número", n1, "é positivo.")
+            resultado = print(f"\n O número {n1} é positivo.\n")
         else:
-            resultado = print("O número", n1, "é neutro.")
+            resultado = print(f"\n O número {n1} é neutro.\n")
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
