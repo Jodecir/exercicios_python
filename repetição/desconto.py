@@ -4,9 +4,9 @@ def desconto(a, b):
 fechado = False
 
 while fechado == False:
-    cliente = str(input("Nome: "))
     try:
-        idade = int(input("Idade: "))
+        cliente = str(input("Insira o nome: ").capitalize())
+        idade = int(input("Insira a idade: "))
     except FloatingPointError:
         print("Valores flutuantes são inválidos. Deve-se digitar apenas números inteiros.")
     except ValueError:
