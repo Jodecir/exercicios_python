@@ -3,9 +3,9 @@ fechado = False
 while fechado == False:
   try:
     print('Calculos:')
-    nome = input('Qual o seu nome: ').capitalize()
-    altura = float(input('Qual sua altura ? '))
-    peso = int(input('Qual seu peso ? '))
+    nome = str(input('Insira o nome: ').capitalize())
+    altura = float(input('Insira altura: '))
+    peso = int(input('Insira o peso: '))
     imc = peso / (altura * altura)
 
     if imc <= 16:
