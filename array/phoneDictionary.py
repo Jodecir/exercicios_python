@@ -3,7 +3,7 @@ fechado = False
 while fechado == False:
     if __name__ == '__main__':
         try:
-            nome = str(input("Digite seu nome: ").capitalize)
+            nome = input("Digite seu nome: ").capitalize()
             idade = int(input("Digite seu idade: "))
             telefone = int(input("Digite seu telefone: "))
         except FloatingPointError:
