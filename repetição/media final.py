@@ -4,7 +4,7 @@ def media(a, b, c, d):
 fechado = False
 
 while fechado == False:
-    nome = input('Insira o nome do Aluno: ')
+    nome = str(input('Insira o nome do Aluno: ')).capitalize()
     try:
         max = 10
         n1 = float(input('Nota do 1º Bimestre: '))
