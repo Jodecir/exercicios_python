@@ -1,3 +1,6 @@
+def media(a, b, c, d):
+    return (a + b + c + d) / 4
+
 fechado = False
 
 while fechado == False:
@@ -19,7 +22,7 @@ while fechado == False:
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
-        media = (n1 + n2 + n3 + n4) / 4
+        media = int(media(n1, n2, n3, n4))
 
         if __name__ == '__main__':
             print("---------------------")
