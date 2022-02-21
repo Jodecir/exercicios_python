@@ -1,13 +1,23 @@
 import random, string
 
-defaultSize = 8
-bigSize = 16
+fechado = False
 
-chars = string.ascii_uppercase + string.ascii_letters + string.digits + string.digits + '!@#$*?'
+while fechado == False:
+    defaultSize = 8
+    bigSize = 16
 
-rnd = random.SystemRandom()
+    chars = string.ascii_uppercase + string.ascii_letters + string.digits + string.digits + '!@#$*?'
 
-print("Senha forte de 8 dígitos:")
-print(''.join(rnd.choice(chars) for i in range(defaultSize)))
-print("Senha extremamente forte de 16 dígitos:")
-print(''.join(rnd.choice(chars) for i in range(bigSize)))
+    rnd = random.SystemRandom()
+
+    print("---------------------")
+    print("Senha forte de 8 dígitos:")
+    print(''.join(rnd.choice(chars) for i in range(defaultSize)))
+    print("---------------------")
+    print("Senha extremamente forte de 16 dígitos:")
+    print(''.join(rnd.choice(chars) for i in range(bigSize)))
+    print("---------------------")
+
+    repetir = input("Deseja gerar outra senha (s/n): ")
+    if repetir == "n":
+        fechado = True
