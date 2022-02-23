@@ -22,7 +22,7 @@ while fechado == False:
                 print(f">>> {n1} Km é {kmToMiles:.3f} milhas")
                 print("---------------------")
             else:
-                print(">>> Repita o processo por favor, a n1 está incorreta.")      
+                print(">>> Repita o processo por favor, o valor está incorreto.")      
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":
