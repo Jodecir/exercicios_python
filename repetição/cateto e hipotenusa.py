@@ -11,8 +11,6 @@ while fechado == False:
         try:
             catOp = float(input("Insira o comprimento do cateto oposto: "))
             catAd = float(input("Insira o comprimento do cateto adjacente: "))
-        except FloatingPointError:
-            print("Valores flutuantes são inválido. Deve-se digitar apenas números inteiros.")
         except ValueError:
             print("Valor inválido. Deve-se digitar apenas números.")
         else:
