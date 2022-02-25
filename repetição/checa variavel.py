@@ -14,6 +14,9 @@ while fechado == False:
   print("É maiúscula: {}".format(variavel.isupper()))
   print("É minúsculo: {}".format(variavel.islower()))
   print("---------------------")
+  print("Tem: {} caracteres (contando espaços)".format(len(variavel)))
+  print("Tem: {} caracteres (sem espaços)".format(len(variavel) - variavel.count(' ')))
+  print("---------------------")
 
   repetir = input("Deseja continuar (s/n): ")
   if repetir == "n":
