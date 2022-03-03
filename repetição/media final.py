@@ -6,19 +6,20 @@ fechado = False
 while fechado == False:
     nome = str(input('Insira o nome do Aluno: ')).capitalize()
     try:
+        min = 0
         max = 10
         n1 = float(input('Nota do 1º Bimestre: '))
-        while n1 > max:
-            n1 = float(input('Nota acima do permitido, 1º Bimestre: '))
+        while n1 > max or n1 < min:
+            n1 = float(input('Nota não permitida, 1º Bimestre: '))
         n2 = float(input('Nota do 2º Bimestre: '))
-        while n2 > max:
-            n2 = float(input('Nota acima do permitido, 2º Bimestre: '))
+        while n2 > max or n1 < min:
+            n2 = float(input('Nota não permitida, 2º Bimestre: '))
         n3 = float(input('Nota do 3º Bimestre: '))
-        while n3 > max:
-            n3 = float(input('Nota acima do permitido, 3º Bimestre: '))
+        while n3 > max or n1 < min:
+            n3 = float(input('Nota não permitida, 3º Bimestre: '))
         n4 = float(input('Nota do 4º Bimestre: '))
-        while n4 > max:
-            n4 = float(input('Nota acima do permitido, 4º Bimestre: '))
+        while n4 > max or n1 < min:
+            n4 = float(input('Nota não permitida, 4º Bimestre: '))
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
