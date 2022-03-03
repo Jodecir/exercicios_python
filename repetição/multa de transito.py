@@ -3,13 +3,13 @@ fechado = False
 while fechado == False:
     try:
         min = 1
-        kmCorrido = float(input('Quantos Km/h o carro está: '))
+        kmCorrido = float(input('Insira em quantos Km/h o carro está: '))
         while kmCorrido < min:
             kmCorrido = float(input('Kilometragem abaixo do permitido, Km/h: '))
-        kmMaxPermitido = float(input('Qual a kilometragem máxima permitida: '))
+        kmMaxPermitido = float(input('Insira a kilometragem máxima permitida: '))
         while kmMaxPermitido < min:
             kmMaxPermitido = float(input('Kilometragem abaixo do permitido, Insira novamente: '))
-        valor = float(input('Qual o valor da multa em R$ para cada km excedido: '))
+        valor = float(input('Insira o valor da multa em R$ para cada km excedido: '))
         while valor < min:
             valor = float(input('Valor abaixo do permitido, insira o valor em R$ para cada km excedido: '))
     except ValueError:
