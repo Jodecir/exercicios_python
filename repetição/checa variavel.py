@@ -1,8 +1,16 @@
 fechado = False
 
 while fechado == False:
-  variavel = str(input("Digite algo: "))
-
+  variavel = str(input("Digite algo: ")).strip()
+  varDividida = variavel.split()
+  
+  print("---------------------")
+  print("Primeiro Valor: {}".format(varDividida[0]))
+  print("Ultimo Valor: {}".format(varDividida[len(varDividida)-1]))
+  print("---------------------")
+  print("Tem: {} caracteres (contando espaços)".format(len(variavel)))
+  print("Tem: {} caracteres (sem espaços)".format(len(variavel) - variavel.count(' ')))
+  print("---------------------")
   print("O tipo primitivo desse valor é {}".format(type(variavel)))
   print("Só tem espaços: {}".format(variavel.isspace()))
   print("---------------------")
@@ -13,9 +21,6 @@ while fechado == False:
   print("---------------------")
   print("É maiúscula: {}".format(variavel.isupper()))
   print("É minúsculo: {}".format(variavel.islower()))
-  print("---------------------")
-  print("Tem: {} caracteres (contando espaços)".format(len(variavel)))
-  print("Tem: {} caracteres (sem espaços)".format(len(variavel) - variavel.count(' ')))
   print("---------------------")
 
   repetir = input("Deseja continuar (s/n): ")
