@@ -1,3 +1,6 @@
+def multa(a, b, c):
+    return (a - b) * c
+
 fechado = False
 
 while fechado == False:
@@ -15,7 +18,7 @@ while fechado == False:
     except ValueError:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:  
-        multa = (kmCorrido - kmMaxPermitido) * valor
+        multa = multa(kmCorrido, kmMaxPermitido, valor)
 
         if kmCorrido > kmMaxPermitido:
             print("---------------------")
