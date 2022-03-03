@@ -28,3 +28,7 @@ while fechado == False:
             print("---------------------")
             print('Você está na velocidade permitida')
             print("---------------------")
+    finally:
+        repetir = input("Deseja continuar (s/n): ")
+        if repetir == "n":
+            fechado = True
