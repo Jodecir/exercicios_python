@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 def desconto(a, b):
     return a * b / 100
 
@@ -35,27 +38,27 @@ while fechado == False:
                 curso = int(input('O número do curso está incorreto, Escolha entre 1 a 5:'))
             if curso == 1:
                 valorCurso = 400
-                print("---------------------")
+                pulaLinha()
                 valorFinal = valorCurso - desconto(valorCurso, idade)
                 print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 2:
                 valorCurso = 1200
-                print("---------------------")
+                pulaLinha()
                 valorFinal = valorCurso - desconto(valorCurso, idade)
                 print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 3:
                 valorCurso = 100
-                print("---------------------")
+                pulaLinha()
                 valorFinal = valorCurso - desconto(valorCurso, idade)
                 print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 4:
                 valorCurso = 149
-                print("---------------------")
+                pulaLinha()
                 valorFinal = valorCurso - desconto(valorCurso, idade)
                 print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             elif curso == 5:
                 valorCurso = 300
-                print("---------------------")
+                pulaLinha()
                 valorFinal = valorCurso - desconto(valorCurso, idade)
                 print('{} {}, o curso desejado de R${} se torna R${} com o desconto da sua idade, que é {}%'.format(greeting, cliente, valorCurso, int(valorFinal), idade))
             else:

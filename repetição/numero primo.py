@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -14,10 +17,14 @@ while fechado == False:
             while count <= n1:
                 if n1 % 2 == 1 and n1 >= 2:
                     count = count + 1
+                    pulaLinha()
                     print("Número primo")
+                    pulaLinha()
                     break
                 else:
+                    pulaLinha()
                     print("Número não primo")
+                    pulaLinha()
                     break
     finally:
         repetir = input("Deseja continuar (s/n): ")

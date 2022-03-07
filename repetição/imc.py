@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 def imc(a, b):
     return a / (b * b)
 
@@ -17,57 +20,57 @@ while fechado == False:
         imc = imc(peso, altura)
 
         if imc <= 16:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está gravemente abaixo do peso.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 16 and imc <= 16.9:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está moderadamente abaixo do peso.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 17 and imc <= 18.4:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está levemente abaixo do peso.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 18.5 and imc <= 24.9:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está em um peso saudável.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 25 and imc <= 29.9:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está em pobrepeso.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 30:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está com obesidade.')
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 30:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} está com obesidade severa.')   
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         elif imc >= 40:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} precisa de tratamento, isso é obesidade mórbida!')    
-            print("---------------------")
+            pulaLinha()
             print('Seu imc é %.1f'% (imc))
-            print("---------------------")
+            pulaLinha()
         else:
-            print("---------------------")
+            pulaLinha()
             print(f'{nome} refaça o teste por favor, algo está incorreto.')
-            print("---------------------")
+            pulaLinha()
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":

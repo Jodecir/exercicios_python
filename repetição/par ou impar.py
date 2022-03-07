@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -10,11 +13,17 @@ while fechado == False:
     else:
         if __name__ == '__main__':
             if n1 % 2 == 0:
+                pulaLinha()
                 print("Número Par")
+                pulaLinha()
             elif n1 % 2 == 1:
+                pulaLinha()
                 print("Número Ímpar")
+                pulaLinha()
             else:
+                pulaLinha()
                 print("Valor Inválido")
+                pulaLinha()
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":

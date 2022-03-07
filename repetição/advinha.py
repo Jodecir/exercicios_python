@@ -1,5 +1,8 @@
 import random
 
+def pulaLinha():
+    print("---------------------")
+
 numMax = 100
 numMin = 1
 numRandom = random.randint(numMin, numMax)  # sorteia número entre 1 e 100
@@ -26,11 +29,11 @@ while fechado == False:
             elif guess > numRandom:
                 print ("Errou, o número sorteado é Menor")
             else:
-                print("---------------------")
+                pulaLinha()
                 print(">>> Parabéns, você tem muita sorte e acertou!")
-                print("---------------------")
+                pulaLinha()
                 print(f"Tentativas necessárias: {cnt}")
-                print("---------------------")
+                pulaLinha()
         
                 repetir = input("Deseja continuar (s/n): ")
                 if repetir == "n":

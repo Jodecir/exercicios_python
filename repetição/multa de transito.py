@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 def multa(a, b, c):
     return (a - b) * c
 
@@ -21,13 +24,13 @@ while fechado == False:
         multa = multa(kmCorrido, kmMaxPermitido, valor)
 
         if kmCorrido > kmMaxPermitido:
-            print("---------------------")
+            pulaLinha()
             print(f'Você excedeu o limite permitido de velocidade e terá que pagar uma multa de R${multa:.2f}')
-            print("---------------------")
+            pulaLinha()
         else:
-            print("---------------------")
+            pulaLinha()
             print('Você está na velocidade permitida')
-            print("---------------------")
+            pulaLinha()
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":

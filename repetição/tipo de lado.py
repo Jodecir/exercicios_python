@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -12,21 +15,21 @@ while fechado == False:
     else:
         if __name__ == '__main__':
             if lado1 == lado2 & lado2 == lado3:
-                print("---------------------")
+                pulaLinha()
                 print("Equilátero")
-                print("---------------------")
+                pulaLinha()
             elif lado1 == lado2 & lado3 != lado1:
-                print("---------------------")
+                pulaLinha()
                 print("Isóscele")
-                print("---------------------")
+                pulaLinha()
             elif lado1 != lado2 != lado3:
-                print("---------------------")
+                pulaLinha()
                 print("Escaleno")
-                print("---------------------")
+                pulaLinha()
             else:
-                print("---------------------")
+                pulaLinha()
                 print("Valor Inválido")
-                print("---------------------")
+                pulaLinha()
     finally:
         repetir = input("Deseja continuar (s/n): ")
         if repetir == "n":

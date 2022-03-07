@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -18,23 +21,23 @@ while fechado == False:
             
         if __name__ == '__main__':
             if escala == "C" or escala == "c":
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em F é {ctof}°")
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em K é {ctok}°")
-                print("---------------------")
+                pulaLinha()
             elif escala == "F" or escala == "f":
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em C é {ftoc}°")
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em K é {ftok}°")
-                print("---------------------")
+                pulaLinha()
             elif escala == "K" or escala == "k":
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em C é {ktoc}°")
-                print("---------------------")
+                pulaLinha()
                 print(f">>> A temperatura em F é {ktof}°")
-                print("---------------------")
+                pulaLinha()
             else:
                 print(">>> Repita o processo por favor, a escala está incorreta.")      
     finally:

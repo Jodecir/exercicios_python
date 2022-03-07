@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 def media(a, b, c, d):
     return (a + b + c + d) / 4
 
@@ -26,27 +29,27 @@ while fechado == False:
         media = int(media(n1, n2, n3, n4))
 
         if __name__ == '__main__':
-            print("---------------------")
+            pulaLinha()
             print("# Matricula:","01234",)
             print("Nome do Aluno:", nome,)
-            print("---------------------")
+            pulaLinha()
             print("Nota 1º B:", n1)
             print("Nota 2º B:", n2)
             print("Nota 3º B:", n3)
             print("Nota 4º B:", n4)
-            print("---------------------")
+            pulaLinha()
             print('Sua média é: {}'.format(media))
 
             if (media >= 6):
-                print("---------------------")
+                pulaLinha()
                 print(">>>", nome, "foi aprovado.",)
-                print("---------------------")
+                pulaLinha()
             else:
-                print("---------------------")
+                pulaLinha()
                 print(">>>", nome, "foi reprovado.",)
-                print("---------------------")
+                pulaLinha()
     finally:
         repetir = input("Deseja continuar (s/n): ")
-        print("...")
+        pulaLinha()
         if repetir == "n":
             fechado = True

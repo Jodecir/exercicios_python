@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -20,19 +23,19 @@ while fechado == False:
             
         if __name__ == '__main__':
             if escala == "Km" or escala == "km":
-                print("---------------------")
+                pulaLinha()
                 print(f">>> {n1} Km é {kmToM:.0f} metros")
                 print(f">>> {n1} Km é {kmToCm:.0f} centimetros")
                 print(f">>> {n1} Km é {kmToMm:.0f} milimetros")
                 print(f">>> {n1} Km é {kmToMiles:.3f} milhas")
-                print("---------------------")
+                pulaLinha()
             if escala == "M" or escala == "m":
-                print("---------------------")
+                pulaLinha()
                 print(f">>> {n1} metros é {mToKm:.3f} quilometros")
                 print(f">>> {n1} metros é {mToCm:.0f} centimetros")
                 print(f">>> {n1} metros é {mToMm:.0f} milimetros")
                 print(f">>> {n1} metros é {mToMiles:.3f} milhas")
-                print("---------------------")
+                pulaLinha()
             else:
                 print(">>> Repita o processo por favor, o valor está incorreto.")      
     finally:

@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 class Television:
     def __init__(self):
         self.state = False
@@ -28,10 +31,10 @@ while fechado == False:
         if button == "s":
             tv.power()
             
-            print("---------------------")
+            pulaLinha()
             print('A TV está ligada: {}'.format(tv.state))
             print('Canal: {}'.format(tv.channel))
-            print("---------------------")
+            pulaLinha()
         else:
             button = input("Deseja avançar ou retroceder o canal (+/-): ")
 

@@ -1,5 +1,8 @@
 import random, string
 
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -10,13 +13,13 @@ while fechado == False:
 
     rnd = random.SystemRandom()
 
-    print("---------------------")
+    pulaLinha()
     print("Senha forte de 8 dígitos:")
     print(''.join(rnd.choice(chars) for i in range(defaultSize)))
-    print("---------------------")
+    pulaLinha()
     print("Senha extremamente forte de 16 dígitos:")
     print(''.join(rnd.choice(chars) for i in range(bigSize)))
-    print("---------------------")
+    pulaLinha()
 
     repetir = input("Deseja gerar outra senha (s/n): ")
     if repetir == "n":

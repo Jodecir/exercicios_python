@@ -1,3 +1,6 @@
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
@@ -16,7 +19,7 @@ while fechado == False:
             count += 1
             n2 +=1
     finally:
-        print("---------------------")
+        pulaLinha()
         repetir = input("Deseja continuar (s/n): ")
 
         if repetir == "n":
