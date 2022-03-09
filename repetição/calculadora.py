@@ -31,30 +31,38 @@ while fechado == False:
         print("Valor inválido. Deve-se digitar apenas números.")
     else:
         try:
-            operador = input('Insira o operador entre (+ - / *) qualquer outro valor resultará em média: ')
-            if operador == "+" or operador == "soma":
+            print(">> [1]: Soma")
+            print(">> [2]: Subtracão")
+            print(">> [3]: Multiplicacão")
+            print(">> [4]: Divisão")
+            print(">> [5]: ²")
+            print(">> [6]: Raiz Quadrada")
+            print(">> [7]: Média")
+
+            operador = input('Insira o número da operação: ')
+            if operador == "1" or operador == "+" or operador == "soma":
                 operacao = soma(n1, n2)
                 print(f"\n>>> Resultado: {operacao}\n")
-            elif operador == "-" or operador == "subtração":
+            elif operador == "2" or operador == "-" or operador == "subtração":
                 operacao = subtracao(n1, n2)
                 print(f"\n>>> Resultado: {operacao}\n")
-            elif operador == "*" or operador == "multiplicação":
+            elif operador == "3" or operador == "*" or operador == "multiplicação":
                 operacao = multiplicacao(n1, n2)
                 print(f"\n>>> Resultado: {operacao}\n")
-            elif operador == "/" or operador == "divisão":
+            elif operador == "4" or operador == "/" or operador == "divisão":
                 operacao = divisao(n1, n2)
                 print(f"\n>>> Resultado: {operacao}\n")
-            elif operador == "²" or operador == "quadrado":
+            elif operador == "5" or operador == "²" or operador == "quadrado":
                 operacao = aoQuadrado(n1)
                 print("\n>>> Primeiro Valor: {:.2f} \n".format(operacao))
                 operacao = aoQuadrado(n2)
                 print("\n>>> Segundo Valor: {:.2f} \n".format(operacao))
-            elif operador == "**" or operador == "raiz":
+            elif operador == "6" or operador == "**" or operador == "raiz":
                 operacao = raiz(n1)
                 print("\n>>> Primeiro Valor: {:.2f} \n".format(operacao))
                 operacao = raiz(n2)
                 print("\n>>> Segundo Valor: {:.2f} \n".format(operacao))
-            else:
+            elif operador == "7" or operador == "**" or operador == "media":
                 operacao = int(media(n1, n2))
                 print(f"\n>>> Resultado: {operacao}\n")
         except ZeroDivisionError:
