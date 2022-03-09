@@ -65,6 +65,8 @@ while fechado == False:
             elif operador == "7" or operador == "**" or operador == "media":
                 operacao = int(media(n1, n2))
                 print(f"\n>>> Resultado: {operacao}\n")
+            else:
+                print("Operador inválido.")
         except ZeroDivisionError:
             print("Não é possível realizar divisão por 0.")
         except ArithmeticError:
