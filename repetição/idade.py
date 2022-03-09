@@ -1,8 +1,10 @@
+from datetime import date
+
 fechado = False
 
 while fechado == False:
     try:
-        idade = int(input('Insira sua idade: '))
+        anoNascimento = int(input('Insira seu ano de nascimento: '))
     except FloatingPointError:
         print("Valores flutuantes são inválido. Deve-se digitar apenas números inteiros.")
     except ValueError:
@@ -10,6 +12,8 @@ while fechado == False:
     else:
         maiorIdade = 18
         idadeVoto = 16
+        anoAtual = date.today().year
+        idade = anoAtual - anoNascimento
 
         if idade >= maiorIdade:
             print("Você é maior de idade.")
