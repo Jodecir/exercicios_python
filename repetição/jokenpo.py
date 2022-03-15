@@ -1,4 +1,5 @@
 import random
+import time
 
 numMax = 2
 numMin = 0
@@ -28,6 +29,13 @@ def playersHands():
     print(">> [Você]:   {}".format(objetos[objetoPLR]))
     print(">> [CPU]:    {}".format(objetos[objetoCPU]))
 
+def handShake():
+    print("JO")
+    time.sleep(1)
+    print("KEN")
+    time.sleep(1)
+    print("PO")
+
 fechado = False
 
 while fechado == False:
@@ -46,30 +54,37 @@ while fechado == False:
         objetoCPU = random.randint(numMin, numMax)
 
         if objetoPLR == objetoCPU:
+            handShake()
             playersHands()
             partidas += 1
             empates += 1
         elif objetoPLR == 0 and objetoCPU == 1:
+            handShake()
             playersHands()
             partidas += 1
             derrotas += 1
         elif objetoCPU == 0 and objetoPLR == 1:
+            handShake()
             playersHands()
             partidas += 1
             vitorias += 1
         elif objetoPLR == 1 and objetoCPU == 2:
+            handShake()
             playersHands()
             partidas += 1
             derrotas += 1
         elif objetoCPU == 1 and objetoPLR == 2:
+            handShake()
             playersHands()
             partidas += 1
             vitorias += 1
         elif objetoPLR == 2 and objetoCPU == 0:
+            handShake()
             playersHands()
             partidas += 1
             derrotas += 1
         elif objetoCPU == 2 and objetoPLR == 0:
+            handShake()
             playersHands()
             partidas += 1
             vitorias += 1
