@@ -5,19 +5,27 @@ def letters_count(words_list):
     count.append(quantity)
   return count
 
+def pulaLinha():
+    print("---------------------")
+
 fechado = False
 
 while fechado == False:
   if __name__ == '__main__':
     try:
-      animal_list = ['cachorro', 'gato', 'elefante']
-      animal = input('Digite um animal a lista: \n')
+      animais = ['cachorro', 'gato', 'elefante']
+      novoAnimal = input('Digite um animal a lista: \n')
 
-      animal_list.append(animal)
-      total_letters = letters_count(animal_list)
-
-      print('Animais da lista:', animal_list)
+      animais.append(novoAnimal)
+      total_letters = letters_count(animais)
+      
+      pulaLinha()
+      print('Animais da lista:')
+      for animal in animais:
+        print(f'{animal}')
+      pulaLinha()
       print('Total de letras por palavra da lista: {}'.format(total_letters))
+      pulaLinha()
     except IndexError:
       print('Não foi possível acessar o index pois ele não existe na lista')
     except Exception:
