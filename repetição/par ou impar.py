@@ -16,10 +16,18 @@ while fechado == False:
                 pulaLinha()
                 print("Número Par")
                 pulaLinha()
+                if n1 > 2:
+                    print("Todos os números pares anterior ao seu número:")
+                    for i in range(2, n1, 2):
+                        print (i)
             elif n1 % 2 == 1:
                 pulaLinha()
                 print("Número Ímpar")
                 pulaLinha()
+                if n1 > 1:
+                    print("Todos os números ímpares anterior ao seu número:")
+                    for i in range(1, n1, 2):
+                        print (i)
             else:
                 pulaLinha()
                 print("Valor Inválido")
