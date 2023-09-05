@@ -25,7 +25,7 @@ saldo_ContaBancaria = random.randint(numMin, numMax)
 saldo_Carteira = 400
 agencia_ContaBancaria = random.randint(1, 9999)
 numero_ContaBancaria = random.randint(1000000, 999999999)
-tipos_ContaBancaria = ["Poupança", "Universitária"]
+tipos_ContaBancaria = ("Poupança", "Universitária")
 tipo_ContaBancaria = 1
 operador = 0
 
@@ -41,6 +41,7 @@ while fechado == False:
         print(">> [3]: Sacar")
         print(">> [4]: Sair")
         pulaLinha()
+        print("Tipo de Conta: {}".format(tipos_ContaBancaria[tipo_ContaBancaria]))
         print(f"Agência: {agencia_ContaBancaria}")
         print(f"Número da conta: {numero_ContaBancaria}")
         pulaLinha()
