@@ -5,8 +5,19 @@ def letters_count(words_list):
     count.append(quantity)
   return count
 
+def remove_repetidos(lista):
+  lista_itens_unicos = []
+
+  for item in lista:
+    if(item in lista_itens_unicos): #Verifica se o atual elemento existe na lista original
+      pass
+    else:
+      lista_itens_unicos.append(item) #Se não existir, adiciona com o comando append() o numero na lista
+
+  return lista_itens_unicos
+
 def pulaLinha():
-    print("---------------------")
+  print("---------------------")
 
 fechado = False
 
@@ -17,6 +28,7 @@ while fechado == False:
       novoAnimal = input('Digite um animal a lista: \n')
 
       animais.append(novoAnimal)
+      animais = sorted(remove_repetidos(animais))
       total_letters = letters_count(animais)
       
       pulaLinha()
